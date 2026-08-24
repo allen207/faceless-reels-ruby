@@ -22,5 +22,4 @@ jobs:
           bundler-cache: true
           ruby-version: ${{ matrix.ruby-version }}
       - run: bundle exec rake test
-      - run: bundle exec rake build
-
+      - run: gem build faceless_reels.gemspec --strict
